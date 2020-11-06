@@ -1,0 +1,62 @@
+@import "../animations.scss";
+@import "../variables.scss";
+
+.weather-card {
+  margin-bottom: 2rem;
+}
+
+.temperature {
+  text-align: right;
+  h5 {
+    color: rgba(0, 173, 255, 0.54);
+  }
+}
+
+.weather-icon {
+  position: absolute;
+  width: 4.2rem;
+  height: 4.2rem;
+  top: -1rem;
+  right: -10px;
+  border: 2px solid #463838;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.7s ease-out;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.small-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header {
+  &-clear {
+    background-color: $color-clear;
+  }
+  
+  &-partlycloudy, &-cloudy {
+    background-color: $color-partlycloudy;
+  }
+
+  &-mostlycloudy {
+    background-color: $color-mostlycloudy;
+    color: $color-contrast;
+  }
+
+  &-rain {
+    background-color: $color-rain;
+    color: $color-contrast;
+  }
+
+  &-hazy {
+    background-color: $color-hazy;
+  }
+
+  &-fog {
+    background-color: $color-fog;
+  }
+}
